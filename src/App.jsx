@@ -1,5 +1,4 @@
 import { useState } from "react";
-// import "./App.css";
 import "./styles/styles.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -55,22 +54,6 @@ function Main() {
         moment.
       </div>
       <button className="button-main">Click Me!</button>
-      {/* <div className="icons">
-        <FontAwesomeIcon icon={faInstagram} />
-        <FontAwesomeIcon icon={faXTwitter} />
-        <FontAwesomeIcon icon={faTiktok} />
-      </div>
-      <div className="copyright">
-        © 2025 R2-D2 Universe. All rights reserved. Unauthorized droid
-        modifications strictly prohibited. Beep-boop approved.
-      </div> */}
-    </div>
-  );
-}
-
-function Footer() {
-  return (
-    <div className="footer">
       <div className="icons">
         <FontAwesomeIcon icon={faInstagram} />
         <FontAwesomeIcon icon={faXTwitter} />
@@ -78,17 +61,17 @@ function Footer() {
       </div>
       <div className="copyright">
         © 2025 R2-D2 Universe. All rights reserved. Unauthorized droid
-        modifications strictly prohibited. Beep-boop approved.
+        modifications strictly prohibited.
       </div>
     </div>
   );
 }
+
 function App() {
   return (
     <>
       <Main />
       <LeftSide />
-      <Footer />
     </>
   );
 }
