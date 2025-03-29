@@ -11,13 +11,13 @@ import {
 function LeftSide() {
   return (
     <div className="left-container">
-      <div className="logo">LOGO</div>
-      <button></button>
-      <button></button>
-      <button></button>
-      <button></button>
-      <button></button>
-      <div className="logo">LOGO</div>
+      <img className="logo-img" src="/public/r2-logo.jpg" alt="" />
+      <button>Droids</button>
+      <button>Maker</button>
+      <button>C3PO</button>
+      <button>R2D4</button>
+      <button>About</button>
+      <img className="logo-img" src="/public/r2-logo.jpg" alt="" />
     </div>
   );
 }
@@ -38,7 +38,10 @@ function Main() {
         resourcefulness in the Star Wars universe.
       </span>
       <div className="grid-container">
-        <div className="grid">grid</div>
+        <div className="grid">
+          R2-D2 is a fearless droid, always ready to help his friends and
+          outsmart enemies with his clever tactics.
+        </div>
         <img className="grid" src="/public/r2.jpg" alt="" />
         <img className="grid" src="/public/r2d2-grid.jpeg" alt="" />
         <div className="grid">
@@ -46,24 +49,46 @@ function Main() {
           unnoticed, quietly observing and waiting for action.
         </div>
       </div>
-      <div className="main-content-bottom">MAIN CONTENT</div>
-      <button className="button-main"></button>
+      <div className="main-content-bottom">
+        R2-D2 cleverly hides in tall grass, using his compact size to stay
+        hidden while scanning the surroundings and waiting for the perfect
+        moment.
+      </div>
+      <button className="button-main">Click Me!</button>
+      {/* <div className="icons">
+        <FontAwesomeIcon icon={faInstagram} />
+        <FontAwesomeIcon icon={faXTwitter} />
+        <FontAwesomeIcon icon={faTiktok} />
+      </div>
+      <div className="copyright">
+        © 2025 R2-D2 Universe. All rights reserved. Unauthorized droid
+        modifications strictly prohibited. Beep-boop approved.
+      </div> */}
+    </div>
+  );
+}
+
+function Footer() {
+  return (
+    <div className="footer">
       <div className="icons">
         <FontAwesomeIcon icon={faInstagram} />
         <FontAwesomeIcon icon={faXTwitter} />
         <FontAwesomeIcon icon={faTiktok} />
       </div>
-      <div className="copyright">copyright</div>
+      <div className="copyright">
+        © 2025 R2-D2 Universe. All rights reserved. Unauthorized droid
+        modifications strictly prohibited. Beep-boop approved.
+      </div>
     </div>
   );
 }
-
 function App() {
-  console.log("working");
   return (
     <>
       <Main />
       <LeftSide />
+      <Footer />
     </>
   );
 }
